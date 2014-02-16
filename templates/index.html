@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Hello To My Site</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Hello To My Site</h1>
+    {% if info %}
+        <p>{{ info }}</p>
+        <img src="{{ info.large_avatar }}" />
+        <a href="{{ info.alt }}">User's Site</a>
+    {% else %}
+        <a href="{{ author_url }}">应用授权</a>
+        <form action={{ url_for('index') }} method="post">
+            Your Username:
+            <input type="text" name="username">
+            <input type="submit" value="提交">
+        </form>
+    {% endif %}
+    <p>hello~</p>
+{% endblock %}
+
