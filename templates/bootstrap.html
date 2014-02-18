@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Hello To My Site</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Hello To My Site</h1>
+    <p>hello~</p>
+    <div class="row">
+        <div class="panel-group" id="accordion">
+            <div class="col-xs-6 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                    <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        Collapsible Group Item #1
+                    </a>
+                </div>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="col-xs-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                        <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            Collapsible Group Item #2
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="col-xs-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
